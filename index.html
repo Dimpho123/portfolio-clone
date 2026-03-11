@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+
+<div class="container">
+
+<div class="d-flex align-items-center">
+
+<img src="resources/image1.jpeg" class="nav-profile">
+
+<a class="navbar-brand fw-bold ms-2">DL</a>
+
+</div>
+
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+<div class="collapse navbar-collapse justify-content-center" id="menu">
+
+<ul class="navbar-nav">
+
+<li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#about">ABOUT ME</a></li>
+
+<li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+
+<li class="nav-item">
+<a class="nav-link" href="#resume">RESUME</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="#contact">CONTACT</a>
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+
+<!-- HERO -->
+
+
+<section id="home" class="hero">
+  <div class="hero-overlay"></div> 
+
+  <div class="hero-content text-center text-white">
+    <p class="welcome">WELCOME TO MY WORLD</p>
+    <h1>Hi, I'm <span class="highlight">Dimpho Lebotsa</span></h1>
+    <h2>a Professional Coder</h2>
+    <p class="hero-text">
+      I use animation as a third dimension to simplify experiences and guide users through each interaction.
+    </p>
+  </div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="about-section py-5" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="card shadow-sm rounded p-4">
+      <div class="row g-4 align-items-center">
+
+        <!-- Left Column -->
+        <div class="col-lg-4 text-center">
+          <img src="resources/image1.jpeg" alt="Profile" class="img-fluid rounded mb-3" style="max-width: 200px;">
+          <h4 class="mb-1">Jone Lee</h4>
+          <p class="mb-1"><strong>Profile:</strong> Professional Coder</p>
+          <p class="mb-1"><strong>Phone:</strong> +27 123 456 789</p>
+          <p class="mb-3"><strong>Email:</strong> <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+
+          <!-- Skills Badges -->
+          <div class="skills-badges">
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-success">CSS</span>
+            <span class="badge bg-info text-dark">Bootstrap</span>
+            <span class="badge bg-warning text-dark">JavaScript</span>
+            <span class="badge bg-danger">GitHub</span>
+            <span class="badge bg-secondary">VS Code</span>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-lg-8">
+          <span class="highlight-label mb-2 d-inline-block">About Me</span>
+          <p>
+            I am a professional coder passionate about building responsive and modern web experiences.  
+            My focus is on creating clean, intuitive interfaces and engaging animations that guide users seamlessly.  
+            Skilled in HTML, CSS, Bootstrap, and JavaScript, I strive to deliver polished websites with attention to detail.  
+            Collaborative and curious, I continuously improve my skills to stay on top of evolving web technologies.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio" class="portfolio">
+
+<div class="container">
+
+<h2 class="text-center mb-5">My Projects</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="project-card">
+
+<img src="project1.jpg">
+
+<h5>Netflix Clone</h5>
+
+<p>HTML CSS Bootstrap</p>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="project-card">
+
+<img src="project2.jpg">
+
+<h5>Restaurant Website</h5>
+
+<p>Responsive Design</p>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="project-card">
+
+<img src="project3.jpg">
+
+<h5>Portfolio Website</h5>
+
+<p>Modern UI</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="resume" class="resume-section">
+
+<div class="container text-center">
+
+<h2>My Resume</h2>
+
+<p class="text-muted">
+If you'd like to learn more about my experience and skills,
+you can download my CV below.
+</p>
+
+<a href="Dimpho-CV.pdf" target="_blank" class="btn btn-danger">
+Download My Resume
+</a>
+
+</div>
+
+</section>
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container text-center">
+    <h2>Contact Me</h2>
+    <p class="text-muted mb-4">
+      Have a project in mind or just want to say hi? Feel free to reach out!
+    </p>
+
+    <!-- Contact Info -->
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <i class="fas fa-envelope fa-2x mb-2"></i>
+        <p><a href="mailto:yourname@example.com">yourname@example.com</a></p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-phone fa-2x mb-2"></i>
+        <p>+27 123 456 789</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-map-marker-alt fa-2x mb-2"></i>
+        <p>Johannesburg, South Africa</p>
+      </div>
+    </div>
+
+    <!-- Simple Contact Form -->
+    <form action="mailto:yourname@example.com" method="post" enctype="text/plain" class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="5" placeholder="Your Message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <!-- Social Icons -->
+<div class="contact-socials mt-5">
+  <p class="small-title">FIND ME ON</p>
+  <div class="icon-box">
+    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center text-light py-3">
+  <div class="container">
+    <small>
+      Developed by <span class="highlight-name">Dimpho Lebotsa</span> using Bootstrap, for portfolio purposes.
+    </small>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
