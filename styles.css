@@ -56,6 +56,12 @@ border-radius:6px;
   letter-spacing: 2px;
   margin-bottom: 10px;
   text-transform: uppercase;
+
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #ff014f; /* typing cursor */
+  width: 0;
+  animation: typingWelcome 3s steps(25, end) forwards, blink 0.8s infinite;
 }
 
 
@@ -65,6 +71,94 @@ border-radius:6px;
   margin-bottom: 15px;
 }
 
+/* TYPEWRITER EFFECT */
+
+.hero-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #ff014f; /* blinking cursor */
+  width: 0;
+  animation: typing 5s steps(60, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typingWelcome {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* blinking cursor */
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+
+/* FLEX HERO */
+.hero-flex{
+  display:flex;
+  align-items:center;
+  gap:40px;
+  justify-content:center;
+}
+
+/* HERO IMAGE */
+.hero-photo{
+  width:340px;
+  height:340px;
+  object-fit:cover;
+  border-radius:10px; /* remove for perfect square */
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+
+  opacity:0;
+  transform:translateY(20px);
+  animation: showPhoto 2s ease forwards;
+  animation-delay:2s; /* appears after typing */
+}
+
+@keyframes showPhoto{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+  .hero-flex{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+
+
+
+
+
+.hero-photo{
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+border:4px solid white;
+}
+
+/* fade animation */
+@keyframes fadeInPhoto{
+  from{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
 
 
 .highlight{
@@ -210,7 +304,7 @@ html {
 }
 
 .contact-section .fa-2x {
-  color: #ff4d4d; /* same highlight as your "Download CV" button */
+  color: #ff4d4d; 
   margin-bottom: 10px;
 }
 
@@ -310,3 +404,36 @@ html {
   color: #ff4d4d; 
   font-weight: 600;
 }
+
+
+
+/* To be deleted */
+section {
+  display: none;
+  padding: 100px 0;
+}
+
+
+section:target {
+  display: block;
+}
+
+
+#home {
+  display: block;
+}
+
+.project-link{
+text-decoration:none;
+color:inherit;
+display:block;
+}
+.project-card{
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover{
+transform: translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
