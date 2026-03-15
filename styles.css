@@ -59,14 +59,14 @@ border-radius:6px;
 
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #ff014f; /* typing cursor */
+  border-right: 3px solid #ff014f;
   width: 0;
   animation: typingWelcome 3s steps(25, end) forwards, blink 0.8s infinite;
 }
 
 
 .hero-content h1 {
-  font-size: clamp(2rem, 5vw, 4rem); /* scales from mobile → 4K */
+  font-size: clamp(2rem, 5vw, 4rem); 
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -76,7 +76,7 @@ border-radius:6px;
 .hero-text {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #ff014f; /* blinking cursor */
+  border-right: 3px solid #ff014f; 
   width: 0;
   animation: typing 5s steps(60, end) forwards, blink 0.8s infinite;
 }
@@ -115,13 +115,13 @@ border-radius:6px;
   width:340px;
   height:340px;
   object-fit:cover;
-  border-radius:10px; /* remove for perfect square */
+  border-radius:10px; 
   box-shadow:0 10px 30px rgba(0,0,0,0.5);
 
   opacity:0;
   transform:translateY(20px);
   animation: showPhoto 2s ease forwards;
-  animation-delay:2s; /* appears after typing */
+  animation-delay:2s; 
 }
 
 @keyframes showPhoto{
@@ -287,7 +287,7 @@ html {
 /* CONTACT SECTION */
 .contact-section {
   padding: 80px 0;
-  background-color: #f8f9fa; /* light background for contrast */
+  background-color: #f8f9fa; 
   color: #333;
 }
 
@@ -364,7 +364,7 @@ html {
 
 .about-section .highlight-label {
   display: inline-block;
-  background-color: #ffe6e6; /* pale highlight */
+  background-color: #ffe6e6; 
   color: #ff4d4d;
   font-weight: 600;
   padding: 5px 15px;
@@ -407,7 +407,7 @@ html {
 
 
 
-/* To be deleted */
+/* To be deleted 
 section {
   display: none;
   padding: 100px 0;
@@ -422,6 +422,7 @@ section:target {
 #home {
   display: block;
 }
+*/
 
 .project-link{
 text-decoration:none;
@@ -436,4 +437,120 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 transform: translateY(-8px);
 box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
+
+/* Navbar link underline animation */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #ff4d4d;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+
+.sections-container section {
+  display: none;
+  padding: 100px 0;
+}
+
+
+.sections-container section:target {
+  display: block;
+}
+
+
+.sections-container #home {
+  display: block;
+}
+
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* space between icon and text */
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(135deg, #ff4d4d, #ff014f); /* gradient badge */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-badge i {
+  font-size: 1rem;
+}
+
+.skill-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.skills-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff4d4d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.portfolio-title {
+  font-size: 2.5rem;        
+  font-weight: 700;        
+  color: #ff4d4d;          
+  position: relative;       
+  text-transform: uppercase; 
+  letter-spacing: 1px;     
+  margin-bottom: 50px;     
+  line-height: 1.2;
+}
+
+
+.portfolio-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;            
+  width: 80px;             
+  height: 4px;               
+  background-color: #ff4d4d;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+
+.portfolio-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 
