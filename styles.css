@@ -661,14 +661,13 @@ width:100%;
     flex-direction: column;
     background: white;
     position: absolute;
-    top: 60px; /* height of navbar */
+    top: 60px; 
     left: 0;
     width: 100%;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     z-index: 999;
   }
 
-  /* Show menu when checkbox is checked */
   #menu-toggle:checked ~ .menu-links {
     display: flex;
   }
