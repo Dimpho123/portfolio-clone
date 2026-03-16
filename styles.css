@@ -71,6 +71,21 @@ border-radius:6px;
   margin-bottom: 15px;
 }
 
+.hero-btn{
+margin-top:20px;
+padding:12px 28px;
+font-weight:600;
+border-radius:30px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+transition: all 0.3s ease;
+}
+
+.hero-btn:hover{
+transform: translateY(-3px);
+box-shadow:0 12px 30px rgba(0,0,0,0.3);
+}
+
+
 /* TYPEWRITER EFFECT */
 
 .hero-text {
@@ -490,7 +505,7 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
   padding: 8px 12px;
   border-radius: 12px;
   color: white;
-  background: linear-gradient(135deg, #ff4d4d, #ff014f); /* gradient badge */
+  background: linear-gradient(135deg, #ff4d4d, #ff014f); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -549,6 +564,39 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.welcome{
+font-size:14px;
+letter-spacing:3px;
+font-weight:600;
+color:#fff;
+text-transform:uppercase;
+position:relative;
+display:inline-block;
+margin-bottom:15px;
+padding-bottom:8px;
+}
+
+/* animated underline */
+.welcome::after{
+content:'';
+position:absolute;
+left:0;
+bottom:0;
+width:0;
+height:2px;
+background:#ff014f;
+animation: underlineGrow 2s ease forwards;
+}
+
+@keyframes underlineGrow{
+from{
+width:0;
+}
+to{
+width:100%;
+}
 }
 
 
